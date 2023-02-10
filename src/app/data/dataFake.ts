@@ -9,8 +9,7 @@ export const dataFake = [
     "id": "2",
     "title": "Loki na Disney",
     "description": "Disney Anuncia o lançamento de Loki 2, previsto para Março 2023",
-    "photoCover": "https://images.thedirect.com/media/article_full/loki-season-2-filming.jpg",
-    "trailer": "https://www.youtube.com/watch?v=y-szNAHNcCM"
+    "photoCover": "https://images.thedirect.com/media/article_full/loki-season-2-filming.jpg"
   },
   {
     "id": "3",
