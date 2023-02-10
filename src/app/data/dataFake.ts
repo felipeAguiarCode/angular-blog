@@ -26,6 +26,13 @@ export const dataFake = [
     "description": "",
     "photoCover": "https://legadodamarvel.com.br/wp-content/uploads/2021/01/Novo-filme-dos-X-Men-na-Marvel-Studios-ganha-novidades-legadodamarvel-750x422.jpg",
     "pharagraf": "Feige basicamente tranquilizou os fãs dizendo que os mutantes estão sim em produção ativa dentro da Marvel, mas que ainda não é hora para anúncios oficiais. Pessoalmente, nós esperamos que possa haver novidades ainda este ano"
+  },
+  {
+    "id": "5",
+    "title": "Willow: quem é quem na nova série de fantasia da Disney",
+    "description": "",
+    "photoCover": "https://lumiere-a.akamaihd.net/v1/images/p_disney_willow_v2_806_0a182a16.jpeg?region=0,273,540,303",
+    "pharagraf": "Viaje para a vila encantada de Nelwyn em Willow, a nova produção de aventura e fantasia que acaba de estrear no Disney+. Baseado no clássico de 1988, Willow se passa em um mundo mágico onde feiticeiros, trolls e outras criaturas místicas florescem.A aventura acompanha um improvável grupo de heróis que partem em uma perigosa busca por lugares muito além de seu lar. Nessa jornada, eles devem enfrentar seus demônios interiores e se unir para salvar seu mundo."
   }
 ]
 
