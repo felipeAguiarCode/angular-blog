@@ -1,4 +1,4 @@
-.container__big-card{
+.container__big-card {
 
   margin-left: 20px;
   margin-right: 20px;
@@ -12,20 +12,86 @@
   justify-content: flex-start;
 }
 
-.big-card__title > h1  {
+.big-card__title>h1 {
   margin-top: 15px;
   font-size: 20px;
 }
 
-.big-card__description{
+.big-card__description {
   margin-top: 20px;
 }
 
-.big-card__description > p > a {
+.big-card__description>p>a {
   color: grey;
 }
 
-.big-card__photo > img{
+.big-card__photo>img {
   width: 100%;
   min-width: 400px;
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  .container__big-card .big-card__title .big-card__description .big-card__photo {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+
+  .container__big-card .big-card__title .big-card__description .big-card__photo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+
+  .container__big-card .big-card__title .big-card__description .big-card__photo {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+
+  .container__big-card .big-card__title .big-card__description .big-card__photo {
+    width: 400px;
+    height: 200px;
+
+  }
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .container__big-card .big-card__title .big-card__description .big-card__photo {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .container__big-card .big-card__title .big-card__description .big-card__photo {
+    width: 400px;
+    height: 400px;
+
+  }
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+
+  .container__big-card .big-card__title .big-card__description .big-card__photo {
+    width: 400px;
+    height: 400px;
+
+  }
 }
