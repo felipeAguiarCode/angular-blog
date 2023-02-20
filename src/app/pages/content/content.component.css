@@ -1,4 +1,4 @@
-.container__content{
+.container__content {
 
   width: 100%;
   height: 100vh;
@@ -11,19 +11,75 @@
   align-items: center;
 }
 
-.content__cover > img{
-  border:5px solid rgb(144, 144, 144);
+.content__cover>img {
+  border: 5px solid rgb(144, 144, 144);
   border-radius: 5px;
   width: 500px;
   min-width: 500px;
   height: 300px;
 }
 
-.content__description{
+.content__description {
   margin-top: 15px;
 }
 
-.content__description > p{
+.content__description>p {
   margin-top: 20px;
   color: rgb(198, 197, 197);
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .container__content .content__cover .content__description {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .container__content .content__cover .content__description {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  .container__content .content__cover .content__description {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  .container__content .content__cover .content__description {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container__content .content__cover .content__description {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container__content .content__cover .content__description {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+  .container__content .content__cover .content__description {
+    width: 400px;
+    height: 400px;
+  }
 }

@@ -1,12 +1,7 @@
 <div class="container__big-card">
 
   <div class="big-card__photo">
-    <img
-      src="{{ photoCover }}"
-      alt=""
-      height="200px"
-      srcset=""
-    >
+    <img src="{{ photoCover }}" alt="" height="200px" srcset="">
   </div>
 
   <div class="big-card__title">
@@ -16,7 +11,7 @@
   <div class="big-card__description">
     <p>
       <a [routerLink]="['content', Id]">
-          {{ cardDescription }}
+        {{ cardDescription }}
       </a>
     </p>
   </div>
