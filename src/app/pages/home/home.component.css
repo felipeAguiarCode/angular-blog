@@ -6,4 +6,13 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .container__articles{
+    flex-direction: column;
+  }
 
+  .articles__main{
+    display: flex;
+    justify-content: center;
+  }
+}
