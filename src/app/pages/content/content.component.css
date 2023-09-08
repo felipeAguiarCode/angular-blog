@@ -24,6 +24,9 @@
 }
 
 .content__description > p{
-  margin-top: 20px;
+  margin-bottom: 20px;
   color: rgb(198, 197, 197);
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 15px;
 }
