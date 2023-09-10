@@ -1,4 +1,17 @@
-<header>
-  <app-menu-bar></app-menu-bar>
-</header>
-<router-outlet></router-outlet>
+<div [ngStyle]="themeService.isDarkMode ? darkModeStyles : lightModeStyles">
+  <button  class="toggle-mode" (click)="toggleTheme()"> 
+    {{ themeService.isDarkMode ? 'Light Mode' : 'Dark Mode' }}
+  </button>
+<div class="app-container">
+  <header>
+    <app-menu-bar></app-menu-bar>
+  </header>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+
+  <app-footer></app-footer>
+</div>
+</div>
+
