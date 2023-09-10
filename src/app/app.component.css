@@ -1,5 +1,55 @@
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
 header {
   margin-top: 15px;
   display: flex;
   justify-content: center;
 }
+
+.content {
+
+  flex-grow: 1
+}
+
+app-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2px;
+  margin: 5px;
+  text-align: center;
+  height: 10%; 
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Modo escuro (estilos existentes) */
+.dark-mode {
+  background-color: #111111;
+  color: white;
+}
+
+/* app.component.css */
+button.toggle-mode {
+  position: absolute;
+  top: 10px; 
+  right: 10px;
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Estilos para o modo claro */
+.light-mode button.toggle-mode {
+  background-color: var(--bg-color-light); 
+  color: var(--text-color-light);
+}
+

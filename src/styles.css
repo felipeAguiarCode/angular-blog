@@ -3,11 +3,17 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  background-color: #111111;
-  color:white;
   font-family: 'Segoe UI';
 }
 
 a{
   text-decoration: none;
+}
+a {
+  color: #007bff; /* Defina a cor desejada para os links */
+  text-decoration: none; /* Remova ou ajuste a decoração do link, se necessário */
+}
+
+a:hover {
+  text-decoration: underline; /* Adicione um estilo de sublinhado ao passar o mouse sobre os links, se desejado */
 }
