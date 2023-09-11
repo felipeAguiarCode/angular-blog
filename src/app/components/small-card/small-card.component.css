@@ -1,9 +1,9 @@
-.container__small-card{
+.container__small-card {
   width: 700px;
   margin-bottom: 15px;
 }
 
-.container__small-card-content{
+.container__small-card-content {
   display: flex;
   flex-direction: row;
 }
@@ -20,6 +20,10 @@
   align-items: center;
 }
 
-.container__small-card__separator{
+.container__small-card__separator {
   margin-top: 10px;
+}
+
+.container__small-card__separator > hr {
+  border-color: grey;
 }
