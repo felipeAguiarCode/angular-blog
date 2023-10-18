@@ -15,3 +15,6 @@
   margin-top: 20px;
   margin-bottom: 5px;
 }
+.container__small-card__separator > hr {
+  border-color: grey;
+}
