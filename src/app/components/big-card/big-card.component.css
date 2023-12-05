@@ -26,6 +26,13 @@
 }
 
 .big-card__photo > img{
+  cursor: pointer;
   width: 100%;
   min-width: 400px;
+}
+
+.load-more {
+  cursor: pointer;
+  justify-content: flex-start;
+  text-align: center;  
 }
