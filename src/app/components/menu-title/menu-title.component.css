@@ -1,14 +1,16 @@
 .container__menu-title{
-  color: white;
+  color: rgb(113, 113, 113);
 }
 
 .container__menu-title > h1{
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 135px;
-  font-family: 'segoe UI';
+  font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
+  color: rgb(113, 113, 113);
+
 }
 
 .container__menu-title > hr{
