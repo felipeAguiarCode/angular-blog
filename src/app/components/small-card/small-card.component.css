@@ -2,6 +2,16 @@
   width: 700px;
   margin-bottom: 15px;
 }
+.container__small-card:hover{
+  cursor: pointer;
+ 
+}
+
+h1{
+  font-size: 20px;
+  font-weight: bold;
+  
+}
 
 .container__small-card-content{
   display: flex;
