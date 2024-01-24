@@ -1,9 +1,11 @@
 .container__articles{
   margin-top: 30px;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @media(min-width: 700px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 
