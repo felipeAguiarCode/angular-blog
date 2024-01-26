@@ -32,6 +32,7 @@
 }
 
 .big-card__photo > img{
+  cursor: pointer;
   width: 100%;
   height: auto;
   @media(min-width: 700px) {
@@ -40,4 +41,10 @@
   @media(min-width: 1000px) {
     min-width: 400px;
   }
+}
+
+.load-more {
+  cursor: pointer;
+  justify-content: flex-start;
+  text-align: center;  
 }
