@@ -3,17 +3,16 @@
   <div class="container__small-card-content">
     <div class="small-card__photo">
       <img
-        src="{{ photoCover }}"
+        src="{{ blogPost.photoCover }}"
         alt=""
         srcset=""
       >
     </div>
-
     <div class="small-card__title">
-      <h1><a [routerLink]="['content', Id]" >{{ cardTitle }}</a></h1>
-    </div>
+      <h1><a [routerLink]="['content', blogPost.id]" >{{ blogPost.title | titlecase }}</a></h1>
+    </div> 
   </div>
-
+  {{ blogPost.description}}
   <div class="container__small-card__separator">
     <hr>
   </div>

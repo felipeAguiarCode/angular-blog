@@ -7,11 +7,13 @@ import { HomeComponent } from './pages/home/home.component';
 const routes: Routes = [
   {
     path:'',
-    component:HomeComponent
+    component:HomeComponent,
+    title: 'Lista de Blogs'
   },
   {
     path:'content/:id',
-    component:ContentComponent
+    component:ContentComponent,
+    title: 'Detalhes do post'
   }
 ];
 

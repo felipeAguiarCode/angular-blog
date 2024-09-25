@@ -10,13 +10,13 @@
   </div>
 
   <div class="big-card__title">
-    <h1><a [routerLink]="['content', Id]">{{ cardTitle }}</a></h1>
+    <h1><a [routerLink]="['content', Id]">{{ cardTitle | titlecase }}</a></h1>
   </div>
 
   <div class="big-card__description">
     <p>
       <a [routerLink]="['content', Id]">
-          {{ cardDescription }}
+          {{ cardDescription  }}
       </a>
     </p>
   </div>

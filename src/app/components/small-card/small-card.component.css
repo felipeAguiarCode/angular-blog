@@ -1,6 +1,5 @@
 .container__small-card{
   margin-bottom: 15px;
-
   @media(min-width: 1000px) {
     width: 700px;
   }

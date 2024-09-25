@@ -8,4 +8,25 @@
   }
 }
 
+.container__searchbar {
+  justify-content: center;
+}
 
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 10px;
+  box-sizing: border-box;  
+  border: 1px solid #04AA6D;
+}
+
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}

@@ -1,15 +1,16 @@
 <div class="container__content">
   <div class="content__cover">
-    <img src="{{ photoCover }}" alt="" srcset="">
+    <img src="{{ blogPost?.photoCover }}" alt="" srcset="">
   </div>
   <div class="content__title">
-    <h1>{{ contentTitle }}</h1>
+    <h1>{{ blogPost?.title | titlecase }}</h1>
     <hr />
   </div>
   <div class="content__description">
-    <a [routerLink]="['']"> << VOLTAR </a>
     <p>
-      {{ contentDescription }}
+      {{ blogPost?.description }}
     </p>
+    <br/>
+    <a [routerLink]="['']"> << VOLTAR </a>
   </div>
 </div>

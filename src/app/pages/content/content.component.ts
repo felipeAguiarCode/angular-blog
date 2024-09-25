@@ -1,36 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {dataFake} from '../../data/dataFake'
+import { BloggingService } from 'src/app/blogging.service';
+import { BlogPost } from 'src/app/blog-post';
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
-export class ContentComponent implements OnInit {
-  photoCover:string = ""
-  contentTitle:string = ""
-  contentDescription:string = ""
-  private id:string | null = "0"
+export class ContentComponent {
+  route: ActivatedRoute = inject(ActivatedRoute);
+  blogPost: BlogPost | undefined; 
+  blogginService: BloggingService = inject(BloggingService);
 
-  constructor(
-    private route:ActivatedRoute
-  ) { }
 
-  ngOnInit(): void {
-    this.route.paramMap.subscribe( value =>
-     this.id = value.get("id")
-    )
-
-    this.setValuesToComponent(this.id)
-  }
-
-  setValuesToComponent(id:string | null){
-    const result = dataFake.filter(article => article.id == id)[0]
-
-    this.contentTitle = result.title
-    this.contentDescription = result.description
-    this.photoCover = result.photoCover
-  }
+  constructor() {
+    const blogPostId = parseInt(this.route.snapshot.params['id'], 0);
+    this.blogPost = this.blogginService.getBlogPostById(blogPostId);
+   }
 
 }
