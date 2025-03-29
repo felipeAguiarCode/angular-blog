@@ -1,4 +1,14 @@
-
+.logo{
+  cursor: pointer;
+}
+.container__menu-bar{
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  border: 3px solid grey;
+}
 
 .container__menu-bar > ul{
   display: flex;

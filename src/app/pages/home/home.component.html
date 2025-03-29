@@ -1,38 +1,53 @@
-<app-menu-title></app-menu-title>
+<main class="main__content">
+  <app-menu-title></app-menu-title>
 
-<div class="container__articles">
-  <div class="articles__main">
+  <div class="container__articles">
+    <div class="articles__main">
+      <h1>Em Alta</h1>
+      <app-big-card Id="4" photoCover="https://i.ytimg.com/vi/SDe73ysJzhU/maxresdefault.jpg"
+        cardTitle="Decola Tech Avanade 2025: Sua Jornada Rumo ao Futuro da Tecnologia" cardDescription="A revolução tecnológica continua e, com ela, surgem oportunidades 
+      imperdíveis para quem deseja ingressar no mercado de TI. O Decola Tech Avanade 2025 chegou para transformar carreiras, 
+      proporcionando uma trilha educacional completa para aqueles que desejam se tornar desenvolvedores full stack.
+      Este programa é uma iniciativa incrível da DIO em parceria com a Avanade, oferecendo um caminho estruturado para o
+       aprendizado de Spring Boot e Angular. Durante o bootcamp, os participantes terão acesso a conteúdos teóricos 
+       e práticos, desenvolvendo habilidades essenciais para atuar no setor de tecnologia. A jornada completa conta 
+       com 67 horas de aprendizado e certificação para os concluintes.
+       O Decola Tech Avanade 2025 é destinado a estudantes de ensino superior nas áreas de exatas, com conclusão a partir 
+       de julho de 2026, e que residam nas cidades de São Paulo, Recife e regiões metropolitanas. Além disso, 
+       é necessário ter disponibilidade para atuar no modelo híbrido, das 9h às 16h.">
+      </app-big-card>
+    </div>
 
-    <app-big-card
-      Id="1"
-      photoCover="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7F51FA9F6CBD9F0C9B1394B1CC0A6A842D07091318674E234CD33CBF7C28CDC3/scale?width=1200&aspectRatio=1.78&format=jpeg"
-      cardTitle="NOVO HOMEM DE FERRO EM 3D"
-      cardDescription="Marvel Anuncia novo homem de ferro"
-      >
-    </app-big-card>
-
+    <div class="articles__others">
+      <h1>Últimos adicionados</h1>
+      <div *ngFor="let item of posts">
+        <app-small-card [Id]="item.id" [cardTitle]="item.title" [photoCover]="item.photoCover"
+          [description]="item.description">
+        </app-small-card>
+      </div>
+    </div>
   </div>
-  <div class="articles__others">
-    <app-small-card
-      Id="2"
-      cardTitle="Nova Série anunciada no Disney +"
-      photoCover="https://disneyplusbrasil.com.br/wp-content/uploads/2021/07/Series-Marvel-Disney-Plus-1024x576.jpg"
-    >
-    </app-small-card>
+</main>
 
-    <app-small-card
-      Id="3"
-      cardTitle="Novo filme do pantera negra lançado em breve"
-      photoCover="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/35720ACD323F927C3A83D809D0F460BD3651740DA519BCC184B6F042057EA14D/scale?width=1200&aspectRatio=1.78&format=jpeg"
-    >
-    </app-small-card
-    >
+<ng-template [ngIf]="formVisible">
+  <div class="article_form__container">
+    <form class="article_form">
 
-    <app-small-card
-      Id="4"
-      cardTitle="Novo filme dos X-men está em pós produção, afirma diretor"
-      photoCover="https://midias.correiobraziliense.com.br/_midias/jpg/2022/07/22/675x450/1_xmen-26096415.jpeg?20220722171339?20220722171339"
-    >
-    </app-small-card>
+      <label>Digite o títutlo do seu artigo</label>
+      <input type="text" [(ngModel)]="newPost.title" name="title" min="2">
+
+      <label>Imagem da capa(URL)</label>
+      <input type="text" [(ngModel)]="newPost.photoCover" name="photo" min="10">
+
+      <label>Escreva seu artigo</label>
+      <textarea [(ngModel)]="newPost.description" name="description" min="200"></textarea>
+
+      <div>
+        <button (click)="switchFormVisibility()">Sair</button>
+        <button (click)="addNewPost()">Adicionar artigo</button>
+      </div>
+    </form>
   </div>
-</div>
+</ng-template>
+
+<button class="new_post__button" (click)="switchFormVisibility()">New Post</button>

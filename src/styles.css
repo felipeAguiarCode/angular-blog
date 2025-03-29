@@ -1,14 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+:root {
+  --background-color: whitesmoke;
+  --text-color: #131313;
+  --border-color: #2b2b2b
+  --box-shadow: box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px;  
+}
+
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
-  background-color: #111111;
-  color:white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color:var(--text-color) ;
+  border-color: var(--border-color) !important;
+  transition: all 0.2s;
 }
-
 a{
   text-decoration: none;
+}
+
+body{
+  width: 90vw;
+  max-width: 1600px;
+  margin: 0 auto;
 }
