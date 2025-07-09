@@ -1,0 +1,6 @@
+.theme__button{
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
