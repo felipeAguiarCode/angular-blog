@@ -1,27 +1,74 @@
-# AngularBlog
+# 📌 Dev's Blog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+## 📖 Sobre o projeto
+Este projeto foi desenvolvido com Angular 14.1.3 como parte de um desafio da DIO para o Decola Tech 2025, onde realizei um fork do repositório original do professor, como foi recomendado, e implementei diversas melhorias e novas funcionalidades.
 
-## Development server
+O Blog Dev tem como objetivo ser um espaço onde desenvolvedores podem acompanhar tendências de mercado, oportunidades de trabalho e novidades do mundo da tecnologia!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Como testar
 
-## Code scaffolding
+### Pré-requisitos
+- Node.js instalado (versão recomendada: 16.x ou superior)
+- Angular CLI instalado globalmente (`npm install -g @angular/cli`)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Passos
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/AlissonLimaG/angular-blog.git
+   ```
+2. Acesse o diretório do projeto:
+   ```sh
+   cd nome-do-projeto
+   ```
+3. Instale as dependências:
+   ```sh
+   npm install
+   ```
+4. Inicie o servidor de desenvolvimento:
+   ```sh
+   ng serve
+   ```
+5. Acesse o projeto no navegador:
+   ```
+   http://localhost:4200
+   ```
 
-## Build
+## 🔥 Alterações e incrementos
+- **Adicionado um formulário** para cadastro de novos artigos e notícias.
+- **Modo claro e escuro** implementado para melhor experiência do usuário.
+- **Melhorias na responsividade**, garantindo que o blog funcione bem em diferentes dispositivos.
+- **Pequenas animações** para tornar a navegação mais fluida e agradável.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🖼️ Capturas de tela
+- ### Home Desktop
+<img src='./assets/homeLight.png' width='500px'>
+<img src='./assets/homeDark.png' width='500px'>
 
-## Running unit tests
+- ### Home Mobile
+<img src='./assets/homeMobileLight.png' width='300px'>
+<img src='./assets/homeMobileDark.png' width='300px'>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- ### Article Desktop
+<img src='./assets/articleLight.png' width='500px'>
+<img src='./assets/articleDark.png' width='500px'>
 
-## Running end-to-end tests
+- ### Article Mobile
+<img src='./assets/articleMobileLight.png' width='300px'>
+<img src='./assets/articleMobileDark.png' width='300px'>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- ### Form Desktop
+<img src='./assets/addArticle.png' width='500px'>
 
-## Further help
+- ### New Article Desktop
+<img src='./assets/articleAdded.png' width='500px'>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- ### Form Mobile
+<img src='./assets/formMobileLight.png' width='300px'>
+<img src='./assets/formMobileDark.png' width='300px'>
+
+
+## ⏭️ Próximos passos
+- Implementar **validação no formulário** de artigos para garantir dados mais estruturados e consistentes.
+- Melhorar ainda mais a **experiência do usuário** com ajustes visuais e usabilidade.
+- Explorar **novas funcionalidades**, como categorias e filtros de artigos.
+

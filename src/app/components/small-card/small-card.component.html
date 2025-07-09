@@ -1,4 +1,4 @@
-<div class="container__small-card">
+<div class="container__small-card" [routerLink]="['content', Id]">
 
   <div class="container__small-card-content">
     <div class="small-card__photo">
@@ -10,14 +10,10 @@
     </div>
 
     <div class="small-card__title">
-      <h1><a [routerLink]="['content', Id]" >{{ cardTitle }}</a></h1>
+      <h1>{{ cardTitle }}</h1>
+      <p>{{description.slice(0,170) + "..."}}</p>
     </div>
   </div>
-
-  <div class="container__small-card__separator">
-    <hr>
-  </div>
-
 </div>
 
 

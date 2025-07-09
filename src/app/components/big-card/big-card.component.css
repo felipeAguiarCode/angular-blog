@@ -1,24 +1,35 @@
 .container__big-card{
-
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 40px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  flex: 1;
 
-  @media(min-width: 700px) {
-    width: 200px;
+  @media(min-width: 800px) {
+    width: 100%;
     margin-bottom: 0;
   }
+
   @media(min-width: 1000px) {
-    width: 400px;
+    max-width: 700px;
+  }
+
+  @media(max-width: 900px) {
+    margin-bottom: 1rem;
   }
 }
 
+.container__big-card:hover{
+  transform: scale(1.005);
+}
+
+.card_content{
+  padding: 1rem;
+}
+
 .big-card__title > h1  {
-  margin-top: 15px;
   font-size: 20px;
 }
 
@@ -27,17 +38,10 @@
 }
 
 .big-card__description > p > a {
-  color: grey;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .big-card__photo > img{
   width: 100%;
   height: auto;
-  @media(min-width: 700px) {
-    min-width: 200px;
-  }
-  @media(min-width: 1000px) {
-    min-width: 400px;
-  }
 }

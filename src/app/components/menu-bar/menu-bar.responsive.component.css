@@ -1,0 +1,14 @@
+@media screen and (max-width: 700px) {
+    .logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .theme__button{
+        position:fixed;
+        top: 60%;
+        right: 10px;
+        background-color: transparent;
+    }
+}
